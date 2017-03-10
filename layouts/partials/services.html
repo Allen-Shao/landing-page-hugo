@@ -1,7 +1,7 @@
-<section id="services">
+<section id="projects">
 
 <!-- Page Content -->
- {{ range $index, $element :=  .Data.Pages }}{{ if or (eq .Section "services") (eq .Section "post") }}
+ {{ range $index, $element :=  .Data.Pages }}{{ if or (eq .Section "projects") (eq .Section "post") }}
     {{ if modBool $index 2 }}
     <div class="content-section-a">
 
@@ -16,7 +16,7 @@
                 </div>
                 {{ with .Params.img }}
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/{{ . }}" alt="">
+                    <img class="img-responsive" src="{{ . }}" alt="">
                 </div>
                 {{ end }}
             </div>
@@ -41,7 +41,7 @@
                 </div>
                 {{ with .Params.img }}
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/{{ . }}" alt="">
+                  <img class="img-responsive" src="{{ . }}" alt="">
                 </div>
                 {{ end }}
             </div>

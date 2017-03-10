@@ -18,7 +18,7 @@
                     <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Projects</a>
+                    <a class="page-scroll" href="#projects">Projects</a>
                 </li>
                 {{ if isset .Site.Params "social" }}
                 <li>
@@ -41,7 +41,7 @@
 		<div class="row">
 		    <div class="col-lg-12">
 			<div class="intro-message">
-			    <h1>{{ .Site.Title }}</h1>
+			    <h1>{{ .Site.Params.name }}</h1>
 			    <h3>{{ .Site.Params.description }}</h3>
 			    <hr class="intro-divider">
 			    {{ if isset .Site.Params "social" }}
